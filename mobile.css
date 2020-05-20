@@ -1,0 +1,123 @@
+
+.mobile-header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #333;
+    width: 100%;
+    height: 8rem;
+}
+
+.mobile-footer {
+    /* position: sticky;
+    position: -webkit-sticky; */
+    position: fixed;
+    bottom: 0;
+    background-color: #333;
+    width: 100%;
+    height: 8rem;
+}
+
+.mobile-navigation {
+    display: block;
+    float: right;
+    color: white;
+    border: 3px solid aliceblue;
+    margin-top: 0.8rem;
+    margin-right: 18px;
+    margin-left: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.mobile-bar-algo-text,
+.mobile-bar-image-text {
+    margin-top: 2.4rem;
+    margin-left: 2.4rem;
+    display: block;
+    color: white;
+
+    font-size: 3rem;
+    margin-right: 2.4rem;
+    font-weight: 900;
+    float: left;
+}
+
+.mobile-vertical-line {
+    display: inline-block;
+    background-color: white;
+    height: 8em;
+    width: 3px;
+    margin-left: 2px;
+    margin-right: 12px;
+}
+
+.mobile-vertical-line {
+    float: left;
+}
+
+.mobile-algo,
+.mobile-algo-active {
+    /* display: inline-block; */
+    display: block;
+    float: right;
+    color: white;
+    border: 3px solid aliceblue;
+    margin-top: 1.2rem;
+    margin-right: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+.mobile-navigation:hover,
+.mobile-navigation:focus {
+    background-color: rgb(153, 153, 153);
+}
+
+.mobile-algo-active {
+    background-color: blue;
+}
+
+
+.mobile-help-btn {
+    margin-left: 0;
+}
+
+.mobile-submit-btn {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0,0,0,0.5);
+    color: white;
+    font-size: 3rem;
+    border: 3px solid white;
+    margin: 1rem;
+    background-color: #333;
+    max-width: inherit;
+    padding: 8px;
+}
+
+.mobile-submit-btn-disabled {
+    color: white;
+    font-size: 3rem;
+    border: 3px solid white;
+    margin: 1rem;
+    background-color: #a4a4a4;
+    max-width: inherit;
+    padding: 8px;
+}
+
+.mobile-thanks-text {
+    display: inherit;
+    font-size: xx-large;
+    resize: none;
+    border: none;
+    margin: 1rem;
+}
+
+@media only screen and (orientation: landscape) and (min-device-width: 480px) and (max-device-width: 640px)  {
+    :root {
+        font-size: 40%;
+    }
+  }

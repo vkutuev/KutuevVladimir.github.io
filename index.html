@@ -1,0 +1,51 @@
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <script src="fs.js"></script>
+        <script src="resources.js"></script>
+        <script src="img-touch-canvas.js"></script>
+        <link href="desktop.css" rel="stylesheet" type="text/css">
+        <link href="mobile.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <style>
+        *:not(.result-textarea) {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            margin: 0;
+            transform: none;
+        }
+
+        .img-canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        .result-textarea {
+            display: inherit;
+            font-family: courier new, monospace;
+            resize: none;
+            border: none;
+            margin: 1rem;
+        }
+
+    </style>
+
+    <body>
+        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYL9ZVGIqccgPbYmeUIj1ZPf84Sf-iJrPj6LKY8oZ9LjuzZQ/viewform?embedded=true" width="640" height="970" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe> -->
+        <div id="main-container"></div>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
