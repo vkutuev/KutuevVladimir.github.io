@@ -46,12 +46,6 @@ if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elain
     });
 }
 
-if (isMobile) {
-    window.alert(`${textResources.help_welcome}\n\n${textResources.help_save_choice[0]} ${textResources.help_save_choice[1]} ${textResources.help_save_choice[2]}`);
-} else {
-    window.alert(`${textResources.help_welcome}`);
-}
-
 window.addEventListener('devicelight', function (e) {
     var lux = e.value;
     alert(lux);
