@@ -223,7 +223,7 @@ This code may be freely distributed under the MIT License
                     if(e.keyCode == 187 || e.keyCode == 61) { //+
                         this.doZoom(5);
                     }
-                    else if(e.keyCode == 54) {//-
+                    else if(e.keyCode == 173 || e.keyCode == 189) {//-
                         this.doZoom(-5);
                     }
                 }.bind(this));

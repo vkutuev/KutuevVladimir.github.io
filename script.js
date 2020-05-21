@@ -240,7 +240,8 @@ function showSlideByPath(path) {
 
     gesturableImg = new ImgTouchCanvas({
         canvas: canvas,
-        path: path
+        path: path,
+        desktop: !isMobile
     });
 }
 
