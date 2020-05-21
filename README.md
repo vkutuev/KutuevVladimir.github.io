@@ -39,4 +39,11 @@
 * В конце опроса нажмите на кнопку "Отправить результаты". 
 * По всем вопросам, обращайтесь на почту: <vladimir.kutuev@gmail.com>
 
-**[НАЧАТЬ ОПРОС](https://kutuevvladimir.github.io/survey.html)**
+<p align="center">
+  <button 
+    onclick="location.href='https://kutuevvladimir.github.io/survey.html'" 
+    type="button"
+    style="font-size: 1.5rem;">
+      НАЧАТЬ ОПРОС
+  </button>
+</p>
