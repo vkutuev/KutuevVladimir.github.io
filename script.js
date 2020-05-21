@@ -212,6 +212,9 @@ function showSlideByPath(path) {
         textNode = document.createTextNode(`${textResources.help_select}`);
         helpText.appendChild(textNode);
         helpText.appendChild(document.createElement("p"));
+        textNode = document.createTextNode(`${textResources.help_zoom}`);
+        helpText.appendChild(textNode);
+        helpText.appendChild(document.createElement("p"));
         textNode = document.createTextNode(`${textResources.help_prev}`);
         helpText.appendChild(textNode);
         helpText.appendChild(document.createElement("p"));
