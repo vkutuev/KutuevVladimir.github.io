@@ -36,5 +36,7 @@
 <p align="center">
   <img src="./Selection_4.png" width="200">
 </p>
-* В конце опроса нажмите на кнопку "Отправить результаты". Чтобы начать опрос, перейдите по [ссылке](https://kutuevvladimir.github.io/survey.html).
+* В конце опроса нажмите на кнопку "Отправить результаты". 
 * По всем вопросам, обращайтесь на почту: <vladimir.kutuev@gmail.com>
+
+**[НАЧАТЬ ОПРОС](https://kutuevvladimir.github.io/survey.html)**

@@ -75,46 +75,6 @@ let fs_JSON = [
         files:['pixel.png', 'neighbour.png', 'w_real.png']
     },
     {
-        entry:'1264965871',
-        dir:'Data/Selecting/1',
-        files:['parts.png', 'best_3.png']
-    },
-    {
-        entry:'1702738248',
-        dir:'Data/Selecting/2',
-        files:['parts.png', 'best_3.png']
-    },
-    {
-        entry:'1797190753',
-        dir:'Data/Selecting/3',
-        files:['best_3.png', 'parts.png']
-    },
-    {
-        entry:'622625731',
-        dir:'Data/Selecting/4',
-        files:['parts.png', 'best_3.png']
-    },
-    {
-        entry:'140492905',
-        dir:'Data/Selecting/5',
-        files:['best_3.png', 'parts.png']
-    },
-    {
-        entry:'21900570',
-        dir:'Data/Selecting/6',
-        files:['parts.png', 'best_3.png']
-    },
-    {
-        entry:'1714017845',
-        dir:'Data/Selecting/7',
-        files:['parts.png', 'best_3.png']
-    },
-    {
-        entry:'825184142',
-        dir:'Data/Selecting/8',
-        files:['best_3.png', 'parts.png']
-    },
-    {
         entry:'405465511',
         dir:'Data/FrameVsStack/1',
         files:['stacking.png', 'frame.png']
@@ -167,5 +127,5 @@ let fs_JSON = [
 ];
 let platformEntry = '1892525113';
 let versionEntry = '1119812764';
-let versionVal = '473a66cb78511e1b727604a78b315301';
+let versionVal = '3cbd4cf733c18f52187988c84dc01236';
 let formId = '1FAIpQLSfkskBB-70qpyFScxBos3kRWLdl3ZojLXOiOIz4JrBxKDA3qA';
