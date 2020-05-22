@@ -361,7 +361,8 @@ function sendResults() {
     };
     console.log(url);
 
-    fetch(url, opts)
+    fetch(url, opts);
+    ga('send', 'event', 'survey', 'submit_results');
 
     var submitBtn = document.getElementById("id-submit-button");
     submitBtn.removeAttribute("onclick");
