@@ -18,32 +18,34 @@ if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elain
 } else {
     isMobile = false;
     cssPrefix = `desktop`;
-    window.addEventListener("keydown", function (event) {
-        switch (event.code) {
-            case "BracketLeft": {
-                prevDataset();
-                break
-            }
-            case "BracketRight": {
-                nextDataset();
-                break
-            }
+    window.addEventListener("keydown", handleKeyboard);
+}
+
+function handleKeyboard(event) {
+    switch (event.code) {
+        case "BracketLeft": {
+            prevDataset();
+            break
         }
-        switch (event.key) {
-            case '1':
-                selectSlide(1);
-                break;
-            case '2':
-                selectSlide(2);
-                break;
-            case '3':
-                selectSlide(3);
-                break;
-            case '4':
-                selectSlide(4);
-                break;
+        case "BracketRight": {
+            nextDataset();
+            break
         }
-    });
+    }
+    switch (event.key) {
+        case '1':
+            selectSlide(1);
+            break;
+        case '2':
+            selectSlide(2);
+            break;
+        case '3':
+            selectSlide(3);
+            break;
+        case '4':
+            selectSlide(4);
+            break;
+    }
 }
 
 window.addEventListener('devicelight', function (e) {
@@ -295,6 +297,7 @@ function showSummary() {
 
     var prevBtn = document.createElement("a");
     prevBtn.className = `${cssPrefix}-navigation`;
+    prevBtn.setAttribute("id", "id-submit-page-prev-button");
     prevBtn.appendChild(document.createTextNode(`<`));
     prevBtn.setAttribute(`onclick`, `prevDataset()`);
     var imageText = document.createElement("a");
@@ -367,10 +370,15 @@ function sendResults() {
     var submitBtn = document.getElementById("id-submit-button");
     submitBtn.removeAttribute("onclick");
     submitBtn.className = `${cssPrefix}-submit-btn-disabled`;
+    var prevBtn = document.getElementById("id-submit-page-prev-button");
+    prevBtn.removeAttribute("onclick");
     var thanksText = document.getElementById("thanks-text");
     thanksText.className = `${cssPrefix}-thanks-text`;
     var textNode = document.createTextNode(`${textResources.thanks_text}`);
     thanksText.appendChild(textNode);
+    if (!isMobile) {
+        window.removeEventListener('keydown', handleKeyboard);
+    }
 }
 
 function selectAlgo(index) {
